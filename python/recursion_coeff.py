@@ -114,7 +114,7 @@ def get_recursion(W0,x0,x1,degmax):
     print(B)
     print(C*2) # rescaled
 
-  return Beta, Bs, Cs
+  return Bs, Cs
 
 def matrix_boyd(F,W0,x0,x1,degmax,coeffs=[]): 
   # get the recursion and expansion coefficients:
