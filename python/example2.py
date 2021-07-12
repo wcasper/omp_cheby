@@ -63,12 +63,14 @@ print("Printing the B sequence:")
 for k in range(degmax):
   print("B%i" % k)
   #sympy.pprint(sympy.nsimplify(sympy.Matrix(B[k,:,:]),tolerance=1e-15,rational=True))
-  sympy.pprint(sympy.Matrix(B[k,:,:]))
+  #sympy.pprint(sympy.Matrix(B[k,:,:]))
+  print(sympy.Matrix(B[k,:,:]))
   
 print("Printing the C sequence:")
 for k in range(1,degmax):
   print("C%i" % k)
   #sympy.pprint(sympy.nsimplify(sympy.Matrix(C[k,:,:]),tolerance=1e-15,rational=True))
-  sympy.pprint(sympy.Matrix(C[k,:,:]))
+  #sympy.pprint(sympy.Matrix(C[k,:,:]))
+  print(sympy.Matrix(C[k,:,:]))
 
 

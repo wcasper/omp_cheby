@@ -28,7 +28,7 @@ nx = 2      # dimensions of Q
 qd = 2      # degree of Q
 Q = np.zeros([qd+1,nx,nx])
 
-a = 3 # some random parameter
+a = 7 # some random parameter
 Q[0,:,:] = sympy.Matrix([[1,0],[0,1 + a*a/2]])
 Q[1,:,:] = sympy.Matrix([[0,a],[a,0]])
 Q[2,:,:] = sympy.Matrix([[0,0],[0,a*a/2]])

@@ -30,11 +30,11 @@ ld = 1      # degree of L
 dd = 1      # degree of D
 L = np.zeros([ld+1,nx,nx])
 L[0,:,:] = sympy.Matrix([[1,0],[0,1]])
-L[1,:,:] = sympy.Matrix([[0,0],[2,0]])
+L[1,:,:] = sympy.Matrix([[0,0],[a,0]])
 
 D = np.zeros([dd+1,nx,nx])
-D[0,:,:] = sympy.Matrix([[3,0],[0,2]])
-D[1,:,:] = sympy.Matrix([[1,0],[0,1]])
+D[0,:,:] = sympy.Matrix([[1,0],[0,1]])
+D[1,:,:] = sympy.Matrix([[0,0],[0,0]])
 
 # convert to cosine series expansion coefficients
 Lcheb = poly2cheb(L)
